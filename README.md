@@ -19,24 +19,13 @@ Firebase Arduino Client Library for ESP8266 and ESP32@^4.3.8
 ArduinoJson@^6.21.1
 AsyncTCP@^1.1.1
 ESPAsyncWebServer-esphome@^3.0.0
-(And other libraries listed in lib)
+(And other libraries listed in IC-3 Pf-IO/lib)
 ```
-
 
 ## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+Used in conjunction with the uECG Wireless  ECG and Heart rate sensor.
+https://cdn.hackaday.io/images/resize/1400x500/1780591562187664851.jpg
 
 ## Contributing
 
