@@ -9,16 +9,16 @@ Download and run the code using either Arduino IDE or PlatformIO (recommended). 
 **This program will not function properly on boards without a touchscreen** 
 (TTGO S3 Touch Screen version is recomended.)
 
-###Required libraries
+### Required libraries
 ```bash
-  arkhipenko/TaskScheduler@^3.7.0
-	sparkfun/SparkFun MAX3010x Pulse and Proximity Sensor Library@^1.1.2
-	adafruit/SdFat - Adafruit Fork@^2.2.1
-	arduino-libraries/ArduinoBLE@^1.3.2
-	mobizt/Firebase Arduino Client Library for ESP8266 and ESP32@^4.3.8
-	bblanchon/ArduinoJson@^6.21.1
-	me-no-dev/AsyncTCP@^1.1.1
-	ottowinter/ESPAsyncWebServer-esphome@^3.0.0
+TaskScheduler@^3.7.0
+SparkFun MAX3010x Pulse and Proximity Sensor Library@^1.1.2
+SdFat - Adafruit Fork@^2.2.1
+ArduinoBLE@^1.3.2
+Firebase Arduino Client Library for ESP8266 and ESP32@^4.3.8
+ArduinoJson@^6.21.1
+AsyncTCP@^1.1.1
+ESPAsyncWebServer-esphome@^3.0.0
 ```
 
 ## Usage
