@@ -25,7 +25,7 @@ ESPAsyncWebServer-esphome@^3.0.0
 ## Usage
 
 Used in conjunction with the uECG Wireless  ECG and Heart rate sensor.
-https://cdn.hackaday.io/images/resize/1400x500/1780591562187664851.jpg
+![alt text](https://cdn.hackaday.io/images/resize/1400x500/1780591562187664851.jpg)
 
 ## Contributing
 
