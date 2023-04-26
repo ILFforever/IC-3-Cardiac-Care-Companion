@@ -1,5 +1,5 @@
 # IC-3-Cardiac-Care-Companion
->"A revolutionary take on Heart desease detection."
+>"A revolutionary take on Heart desease early detection."
 
 This is the main github repo for The IC-3 Inteligent Cardiac Care Companion, A Compact ECG and SPO2 Device with Predictive Analytics for Detection of Cardiac Issues. This project has been developed under complyment with the NSC competition 2022
 
