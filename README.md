@@ -19,6 +19,7 @@ Firebase Arduino Client Library for ESP8266 and ESP32@^4.3.8
 ArduinoJson@^6.21.1
 AsyncTCP@^1.1.1
 ESPAsyncWebServer-esphome@^3.0.0
+<sub> (And other libraries listed in lib)</sub>	
 ```
 
 ## Usage
