@@ -24,7 +24,7 @@ ESPAsyncWebServer-esphome@^3.0.0
 
 ## Usage
 
-Used in conjunction with the uECG Wireless  ECG and Heart rate sensor.
+Used in conjunction with the uECG Wireless ECG and Heart rate sensor. For accurate ECG detection.
 ![alt text](https://cdn.hackaday.io/images/resize/1400x500/1780591562187664851.jpg)
 
 ## Contributing
