@@ -4,7 +4,7 @@ This is the main github repo for The IC-3 Inteligent Cardiac Care Companion, A C
 ## Installation
 
 Download and run the code using either Arduino IDE or PlatformIO (recommended). The program is intended to be ran on an ESP32-S3 or ESP32-Wroom 32.
-*This program will not function properly without a touchscreen* (TTGO S3 Touch Screen version is recomended.)
+**This program will not function properly on boards without a touchscreen** \n(TTGO S3 Touch Screen version is recomended.)
 
 
 ```bash
