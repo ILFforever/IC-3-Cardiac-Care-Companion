@@ -1,10 +1,12 @@
 # IC-3-Cardiac-Care-Companion
+>"A revolutionary take on Heart desease detection".
 This is the main github repo for The IC-3 Inteligent Cardiac Care Companion, A Compact ECG and SPO2 Device with Predictive Analytics for Detection of Cardiac Issues. This project has been developed under complyment with the NSC competition 2022
 
 ## Installation
 
 Download and run the code using either Arduino IDE or PlatformIO (recommended). The program is intended to be ran on an ESP32-S3 or ESP32-Wroom 32.
-**This program will not function properly on boards without a touchscreen** \n(TTGO S3 Touch Screen version is recomended.)
+**This program will not function properly on boards without a touchscreen** 
+(TTGO S3 Touch Screen version is recomended.)
 
 
 ```bash
