@@ -1,3 +1,4 @@
+//Copyright by IC-3 Heart Assistant team 2022
 #define TOUCH_MODULES_CST_MUTUAL
 #include "Arduino.h"
 #include <WiFi.h>
