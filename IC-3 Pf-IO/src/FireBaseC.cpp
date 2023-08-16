@@ -10,6 +10,8 @@
 #define STORAGE_BUCKET_ID "nsc-ic3.appspot.com"
 #define USER_EMAIL "hammymukura@gmail.com"
 #define USER_PASSWORD "onoffcomp2517"
+bool Sendsuccess;
+bool getlog = false; //for wifi logs
 FirebaseData fbdo;
 FirebaseAuth auth;
 FirebaseConfig config;
@@ -27,13 +29,19 @@ int StartWifi;
 bool WifiNotFound;
 void WifiInit()
 {
+  Sendsuccess = false; //reset bool
+  WiFi.mode(WIFI_STA);
   WiFi.begin(CurWifi.c_str(), CurPW.c_str());
-  // Serial.print("Free Heap : " + String(ESP.getFreeHeap()));
-  // Serial.print("Connecting to Wi-Fi");
+  if (getlog)
+  {
+    Serial.println("CurWifi = " + CurWifi + " CurPW = " + CurPW);
+    Serial.print("Free Heap : " + String(ESP.getFreeHeap()));
+    Serial.print("Connecting to Wi-Fi");
+  }
   StartWifi = millis();
   while (WiFi.status() != WL_CONNECTED)
   {
-    if (millis() - StartWifi >= 8000) // take too long to find wifi
+    if (millis() - StartWifi >= 10000) // take too long to find wifi
     {
       WifiNotFound = true;
       WiFi.mode(WIFI_MODE_NULL); // Turn off wifi
@@ -43,10 +51,14 @@ void WifiInit()
   }
   if (!WifiNotFound)
   {
-    // Serial.print("Connected with IP: ");
-    // Serial.println(WiFi.localIP());
+    if (getlog)
+    {
+      Serial.print("Connected with IP: ");
+      Serial.println(WiFi.localIP());
+    }
     configTime(0, 0, ntpServer);
-    // Serial.printf("Firebase Client v%s\n\n", FIREBASE_CLIENT_VERSION);
+    if (getlog)
+      Serial.printf("Firebase Client v%s\n\n", FIREBASE_CLIENT_VERSION);
     config.api_key = API_KEY;
     auth.user.email = USER_EMAIL;
     auth.user.password = USER_PASSWORD;
@@ -57,11 +69,13 @@ void WifiInit()
     Firebase.begin(&config, &auth);
     while ((auth.token.uid) == "")
     {
-      // Serial.print('.');
+      if (getlog)
+        Serial.print('.');
       delay(500);
     }
     uid = auth.token.uid.c_str();
-    // Serial.print("User UID: " + String(uid));
+    if (getlog)
+      Serial.print("User UID: " + String(uid));
     Firebase.reconnectWiFi(WifiRecon); // Comment or pass false value when WiFi reconnection will control by your code or third party library
   }
 }
@@ -86,11 +100,13 @@ void WifiCycle(String str, String Name) // Path and server side name;
     timestamp = getTime();
     if (Firebase.Storage.upload(&fbdo, STORAGE_BUCKET_ID, str, mem_storage_type_sd, str, Name))
     {
-      // Serial.printf("\nDownload URL: %s\n", fbdo.downloadURL().c_str());
+       //Serial.printf("\nDownload URL: %s\n", fbdo.downloadURL().c_str());
+       Sendsuccess = true;
     }
     else
     {
-      // Serial.println(fbdo.errorReason());
+       //Serial.println(fbdo.errorReason());
+       Sendsuccess = false;
     }
   }
 }
