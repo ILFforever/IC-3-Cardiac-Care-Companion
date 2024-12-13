@@ -1,9 +1,10 @@
 Big project so readme edit not done krub
 # IC-3-Cardiac-Care-Companion
+Honorable Mention award winner of Thailand's NSC competition 2023
 >"A revolutionary take on Heart desease early detection."
 
 The IC-3 Inteligent Cardiac Care Companion, A Compact ECG and SPO2 Device with Predictive Analytics for Detection of Cardiac Issues, developed under complyment with the NSC competition 2022
->Won the Honorable Mention of Thailand NSC competition 2023
+
 ## Installation
 
 Download and run the code using either Arduino IDE or PlatformIO (recommended). The program is intended to be ran on an ESP32-S3 or ESP32-Wroom 32.
