@@ -1,10 +1,18 @@
-Big project so readme edit not done krub
 # IC-3-Cardiac-Care-Companion
 Honorable Mention award winner of Thailand's NSC competition 2023
 >"A revolutionary take on Heart desease early detection."
+![alt text](https://github.com/ILFforever/IC-3-Cardiac-Care-Companion/blob/main/image/Front.jpg "IC-3 Main Unit")
 
-The IC-3 Inteligent Cardiac Care Companion, A Compact ECG and SPO2 Device with Predictive Analytics for Detection of Cardiac Issues, developed under complyment with the NSC competition 2022
+## Project Overview
+- *IC-3* is a compact, portable, and cost-effective smart device designed to monitor heart health and detect potential cardiac issues.
+- It integrates ECG monitoring, pulse rate, and blood oxygen level measurements into a single device, leveraging AI for health analysis and providing accessible data visualization through our web application.
 
+## Features
+- Comprehensive Monitoring: Measures ECG, heart rate, and SpO2 levels.
+- AI-Powered Analysis: Detects abnormalities such as Atrial Fibrillation (AF).
+- Portability: Compact design for use anywhere, anytime.
+- User-Friendly Interface: Data visualization on an intuitive web application.
+- Cost-Effective: Affordable without compromising on accuracy.
 ## Installation
 
 Download and run the code using either Arduino IDE or PlatformIO (recommended). The program is intended to be ran on an ESP32-S3 or ESP32-Wroom 32.
